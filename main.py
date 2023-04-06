@@ -68,7 +68,7 @@ mood_list = df.groupby('endTime')['mood_int'].apply(lambda x: x.mode()[0])
 df
 
 #On affiche le calendrier de l'année
-
+#Pour ne pas pas afficher la valeur du label sur le calendrier alors utiliser value_label=False
 july.calendar_plot(mood_list.index,mood_list,cmap='Dark2',value_label=True)
 '''
 0 : calm ==> turquoise
