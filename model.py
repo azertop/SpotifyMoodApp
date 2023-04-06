@@ -6,14 +6,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler,LabelEncoder
 import pickle
 
-# On charge les données à partir du csvimport pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler,LabelEncoder
-import pickle
-
 # On charge les données à partir du csv
 df = pd.read_csv("data_moods.csv")
 
