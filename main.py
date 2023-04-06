@@ -68,13 +68,7 @@ mood_list = df.groupby('endTime')['mood_int'].apply(lambda x: x.mode()[0])
 df
 
 #On affiche le calendrier de l'année
-<<<<<<< HEAD
-
 july.heatmap(mood_list.index, mood_list.values, title='User\'s Mood', cmap="Dark2")
-=======
-#Pour ne pas pas afficher la valeur du label sur le calendrier alors utiliser value_label=False
-july.calendar_plot(mood_list.index,mood_list,cmap='Dark2',value_label=True)
->>>>>>> e079555e56783ec293c9ec86490dc29c0a008e9c
 '''
 0 : calm ==> turquoise
 1 : energetic ==> violet
