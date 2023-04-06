@@ -23,6 +23,6 @@ The repository also contains examples of Spotify listening data to aid in testin
 The main.py file contains the main code of the application, which uses the Spotify API and Python libraries to extract and analyze the listening data. The machine learning model is trained using scikit-learn and pickle is used to save the trained models.
 
 Here you can see an example of what the calendar produced by this project looks like : 
-![](calendar.png)
+![](cal.png)
 
 Have fun tracking your daily mood using your Spotify listening history!
