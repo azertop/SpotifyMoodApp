@@ -9,10 +9,20 @@ The requirements.txt file included in the repository lists all the required Pyth
 ```
 pip install -r requirements.txt
 ```
-The repository also contains examples of Spotify listening data to aid in testing the application. The data folder contains CSV files representing the listening history of different users. You can use these files to test the application and see how it works.
 
-The main.py file contains the main code of the application, which uses the Spotify API and Python libraries to extract and analyze the listening data. The machine learning model is trained using scikit-learn and joblib is used to save the trained models.
+In this project, Spotify's credentials are set as environment variable. You fill have to set them before running the code.
 
-Finally, the README.md file contains additional information about the project, installation and usage instructions, and a list of required dependencies. Feel free to explore the repository and contribute by submitting pull requests or reporting issues.
+```
+export SPOTIFY_CLIENT_ID=""
+export SPOTIFY_CLIENT_SECRET=""
+```
+
+
+The repository also contains examples of Spotify listening data to aid in testing the application. The data folder contains CSV files representing my listening history. You can use these files to test the application and see how it works.
+
+The main.py file contains the main code of the application, which uses the Spotify API and Python libraries to extract and analyze the listening data. The machine learning model is trained using scikit-learn and pickle is used to save the trained models.
+
+Here you can see an example of what the calendar produced by this project looks like : 
+![](calendar.png)
 
 Have fun tracking your daily mood using your Spotify listening history!
