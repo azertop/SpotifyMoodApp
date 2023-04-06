@@ -49,7 +49,7 @@ for music in musics[0]:
 
 features=["danceability","acousticness","energy","instrumentalness","liveness","valence","loudness","speechiness"]
 df.drop("mode",axis=1)
-df[df.columns[6:16]]=df[['danceability', 'energy', 'loudness', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence']]
+df[df.columns[6:16]]=df[features]
 
 
 with open('model.pickle', 'rb') as f:
@@ -69,7 +69,7 @@ df
 
 #On affiche le calendrier de l'année
 
-july.calendar_plot(mood_list.index,mood_list,cmap='Dark2',value_label=True)
+july.heatmap(mood_list.index, mood_list.values, title='User\'s Mood', cmap="Dark2")
 '''
 0 : calm ==> turquoise
 1 : energetic ==> violet
