@@ -68,7 +68,7 @@ mood_list = df.groupby('endTime')['mood_int'].apply(lambda x: x.mode()[0])
 df
 
 #On affiche le calendrier de l'année
-july.heatmap(mood_list.index, mood_list.values, title='User\'s Mood', cmap="Dark2")
+july.heatmap(mood_list.index, mood_list.values, title='User\'s Mood', cmap="Dark2",month_grid=True)
 '''
 0 : calm ==> turquoise
 1 : energetic ==> violet
